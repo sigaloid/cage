@@ -228,7 +228,6 @@ namespace cage
                 var encrypt = Aead.Encrypt(sharedkey, new Nonce(0, 12), ReadOnlySpan<byte>.Empty,
                     Encoding.UTF8.GetBytes(plaintext ?? throw new InvalidOperationException()));
                 var output = Convert.ToBase64String(encrypt) + ":" + Convert.ToBase64String(key.Export(Pub));
-                Console.WriteLine(Convert.ToBase64String(sharedkey.Export(Sym)));
                 Console.Write("Your cipher-text is: ");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write($"{output}");
