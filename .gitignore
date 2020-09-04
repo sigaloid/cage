@@ -131,3 +131,5 @@ $RECYCLE.BIN/
 .DS_Store
 
 _NCrunch*
+.vs/cage/DesignTimeBuild/.dtbcache.v2
+.vs/cage/DesignTimeBuild/.dtbcache.v2
